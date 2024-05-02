@@ -1,0 +1,132 @@
+.skills-section {
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .skill-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skill-card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .skill-card:hover {
+    transform: translateY(-15px);
+    cursor: pointer;
+  }
+
+  .skill-card img {
+    width: 150px;
+    height: 120px;
+    margin: 0 auto 1.5rem;
+    display: block;
+  }
+
+  .range-slider {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 7px;
+    border-radius: 5px;
+    background: #000000;
+    outline: none;
+    margin-bottom: 5px;
+  }
+  
+  .range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: red;
+    cursor: pointer;
+  }
+
+  .skill-value {
+    background-color: black;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+  }
+
+  .skill-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .skill-card p {
+    font-size: 0.9rem;
+    color: #777;
+  }
+
+  .skills {
+    font-size: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.item {
+    margin-top: 30px;
+}
+
+.last-item{
+  margin-bottom: 25px;
+}
+
+.skills h1 {
+    color: #000000;
+}
+
+.skills .list {
+    list-style: none;
+    width: 60%;
+}
+
+.list span {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+    .about h2 {
+        font-size: 25px;
+    }
+
+    .about .prompt {
+        margin-top: 10px;
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .skills {
+        text-align: center;
+    }
+
+    .list {
+        padding: 0;
+    }
+
+    .skills h2 {
+        font-size: 30px;
+    }
+}
